@@ -12,7 +12,6 @@ console.info({ answer });
 
 function Game() {
   const [guesses, setGuesses] = React.useState([]);
-  console.log({ guesses });
   function registerGuess(guessString) {
     const newGuesses = [
       { id: crypto.randomUUID(), label: guessString },
