@@ -14,7 +14,7 @@ function Game() {
   const [guesses, setGuesses] = React.useState([]);
   function registerGuess(guessString) {
     const newGuesses = [
-      { id: crypto.randomUUID(), label: guessString },
+      { id: crypto.randomUUID(), value: guessString },
       ...guesses,
     ];
     setGuesses(newGuesses);
