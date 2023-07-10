@@ -5,7 +5,10 @@ function WinningBanner({ numberOfGuesses }) {
     <div className="happy banner">
       <p>
         <strong>Congratulations!</strong> You got it in{" "}
-        <strong>{`${numberOfGuesses} guesses`}</strong>.
+        <strong>
+          {numberOfGuesses === 1 ? "1 guess" : `${numberOfGuesses} guesses`}
+        </strong>
+        .
       </p>
     </div>
   );

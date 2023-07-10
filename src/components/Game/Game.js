@@ -39,7 +39,11 @@ function Game() {
   return (
     <>
       <GuessList guesses={guesses} answer={answer} />
-      <GuessInput disabled={gameIsOver} registerGuess={registerGuess} />
+      <GuessInput
+        autoFocus
+        disabled={gameIsOver}
+        registerGuess={registerGuess}
+      />
       {gameStatus === "won" && (
         <WinningBanner numberOfGuesses={guesses.length} />
       )}
